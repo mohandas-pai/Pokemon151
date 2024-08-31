@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f1eeee;
+}
+
+
+.header
+{
+    padding: 30px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+
+.header .logo h2
+{
+    color: chocolate;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.header .logo h2 span
+{
+    color:blue
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+.container .box
+{
+    width: 230px;
+    height: 330px;
+    overflow: hidden;
+    margin-top: 20px;
+    background: #f1eeee;
+    padding: 10px 20px;
+    box-shadow: rgba(57, 57, 57, 0.35) 0px 5px 15px;
+}
+
+.container .box .content
+{
+    align-items: center;
+    max-width: 100%;
+}
+
+.container .box .content .image-box img
+{
+    height: 225px;
+    width: 160px;
+}
+
+.container .box .content .detail .info
+{
+    display:block;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container .box .content .detail .info h3
+{
+    color: darkorange;
+    text-transform: uppercase;
+    font-weight : 900;
+}
+
+.container .box .content .detail .info p
+{
+    color: rebeccapurple;
+    font-weight: 800;
+}
+
+.container .box .content .detail .info span
+{
+    color: #3a3838;
+    font-weight: 100;
+}
+
+@media (max-width: 479px) {
+    .container .box
+{
+    width: 180px;
+    height: 310px;
+    overflow: hidden;
+    margin-top: 20px;
+    background: #f1eeee;
+    padding: 5px 10px;
+    box-shadow: rgba(57, 57, 57, 0.35) 0px 5px 15px;
+}
+.container .box .content .image-box img
+{
+    height: 225px;
+    width: 160px;
+    padding: 0;
+}
+}
